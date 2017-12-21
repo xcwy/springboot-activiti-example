@@ -13,11 +13,6 @@ buildscript {
     dependencies {
         // for spring boot
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-        //for docker build
-        classpath('se.transmode.gradle:gradle-docker:1.2')
-        // for unit test code coverage  -- need to find a way to put it in its file
-        classpath('com.palantir:jacoco-coverage:0.4.0')
-
     }
 }
 

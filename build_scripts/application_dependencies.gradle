@@ -2,9 +2,21 @@
 // Auto manage all spring boot dependencies
 apply plugin: 'org.springframework.boot'
 
+def activitiVersion = '5.17.0'
+
 dependencies {
-    // Spring
-    compile('org.springframework.boot:spring-boot-starter-web')
+
+    compile("org.springframework.boot:spring-boot-starter-web:1.2.6.RELEASE")
+
+    compile("org.activiti:spring-boot-starter-basic:$activitiVersion")
+
+//    compile("com.h2database:h2:1.4.183")
+
+    // Spring data jpa
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+
+    // mysql driver
+    compile('mysql:mysql-connector-java:5.1.42')
 
     // Common tool like: StringUtils
     compile('org.apache.commons:commons-lang3:3.4')
